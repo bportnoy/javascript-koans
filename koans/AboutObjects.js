@@ -44,8 +44,8 @@ describe("About Objects", function () {
       }
     };
    
-    expect(currentYear).toBe(2014);
-    expect(meglomaniac.calculateAge()).toBe(44);
+    expect(currentYear).toBe(2015);
+    expect(meglomaniac.calculateAge()).toBe(45);
   });
 
   describe("'in' keyword", function () {
@@ -96,7 +96,7 @@ describe("About Objects", function () {
     var colouredCircle = new Circle(5);
     colouredCircle.colour = "red";
     
-    expect(simpleCircle.colour).toBe(false);
+    expect(simpleCircle.colour).toBe(undefined);
     expect(colouredCircle.colour).toBe("red");
   
     Circle.prototype.describe = function () {
